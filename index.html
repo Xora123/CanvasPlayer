@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Application Title</title>
+    <iframe id="app-frame" src="https://playcanv.as/p/2OlkUaxF/">
+        <script>
+        var iframe = document.getElementById("app-frame");
+        iframe.contentWindow.postMessage({
+            score: 10,
+        }, "https://playcanv.as");
+        </script>
+    <script src="playcanvas-stable.min.js"></script>
+    <script>
+        SCENE_PATH = "12346.json";
+        CONTEXT_OPTIONS = {
+            'alpha': false,
+            'preserveDrawingBuffer': false
+        };
+    </script>
+</head>
+<body>
+    <script src="__start__.js"></script>
+    <script src="__loading__.js"></script>
+    <script>
+    var app = pc.Application.getApplication();
+    app.on("start", function () {
+        // get the root of the scene.
+        var hierarchy = app.root.getChildren()[0];
+
+        // do other stuff here
+    });
+    </script>
+</body>
+</html>
