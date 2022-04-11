@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'>
+    <meta charset='utf-8'>
+    <link href="style.css" rel="stylesheet">
+    <title>Player Canvas</title>
+</head>
+<body>
+    <h1>Voila un Petit player Canvas </h1>
+    <button type="button" onclick="sendMessage();">Click Me!</button>
+</script>
+    <iframe class="frame" id="app-frame" src="https://playcanv.as/b/gs6MJW79/">
+        <script>
+        var iframe = document.getElementById("app-frame");
+        iframe.contentWindow.postMessage({
+            score: 100,
+        }, "https://playcanv.as");
+        </script>
+        <script src="__start__.js"></script>
+        <script src="__loading__.js"></script>      
+</body>
+
+<script src="playcanvas-stable.min.js"></script>
+</html>

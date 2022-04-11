@@ -1,0 +1,25 @@
+
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'>
+    <meta charset='utf-8'>
+    <link href="style.css" rel="stylesheet">
+    <title>Player Canvas</title>
+</head>
+<div></div>
+    <h1>Player Canvas</h1>
+    <label for="recto-upload" class="custom-file-upload btn">Upload Recto</label>
+<input type="file"></input>
+<label for="verso-upload" class="custom-file-upload btn">Upload Verso</label>
+<input type="file"></input>
+    <iframe id="app-frame" src="https://playcanv.as/b/XRn20b4y/" width="1200px" height="800px">
+        <script>
+            var iframe = document.getElementById("app-frame");
+            iframe.contentWindow.postMessage({
+                score: 10,
+            }, "https://playcanv.as");
+        </script>
+<script src="playcanvas-stable.min.js"></script>
+
+    </body>
+</html>

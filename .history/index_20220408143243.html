@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'>
+    <meta charset='utf-8'>
+    <link href="style.css" rel="stylesheet">
+    <title>Player Canvas</title>
+    <script src="playcanvas-stable.min.js"></script>
+</head>
+<body>
+    <h1>Player Canvas</h1>
+    <script>
+        var msg = {
+            animation: 'hello',
+            entity: 'Person'
+        };
+    var iframe = document.getElementById("app-frame");
+    var y = (iframe.contentWindow || iframe.contentDocument);
+    y.postMessage(JSON.stringify(msg), 'https://playcanv.as/p/sARIOB5U/');
+      </script>
+      <iframe id="app-frame" src="https://playcanv.as/p/sARIOB5U/" width="1400px" height="800px">
+        <script src="__start__.js"></script>
+        <script src="__loading__.js"></script>      
+</body>
+</html>
